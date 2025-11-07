@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary:#b20bb5 ;
+  --grid-template-columns-auto: repeat(auto-fill, minmax(200px, 1fr));
+
+  }
+
+.active hr{
+    @apply block
+}
+
+::-webkit-scrollbar {
+    @apply hidden
+}
+
+*{
+  font-family:Outfit;
+}
+
+.show-scrollbar::-webkit-scrollbar {
+  display: block; 
+  
+}
+
+.show-scrollbar::-webkit-scrollbar-thumb {
+  background: #b20bb5;
+  border-radius: 9px; /* Makes the thumb rounded */
+}
+.show-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #b20bb5; 
+}
+
+@media (max-width:740px){
+  .active p{
+    @apply text-white bg-primary
+  }
+}
+
+.Toastify__toast--success {
+  background: #f8b7f9 !important; /* purple-500 */
+  color: white !important;
+}
+
+.Toastify__toast--warning {
+  background: #f8b7f9 !important; /* purple-500 */
+  color: white !important;
+}
+
+.Toastify__toast--error {
+  background: #f8b7f9 !important; /* purple-500 */
+  color: white !important;
+}
+
+.Toastify__toast--info {
+  background: #f8b7f9 !important; /* purple-500 */
+  color: white !important;
+}

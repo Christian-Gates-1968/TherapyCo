@@ -1,0 +1,93 @@
+Initial Commit
+Initial Commit
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# interactive rebase in progress; onto 44f18a2
+# Last command done (1 command done):
+#    pick ed2c68c Initial Commit
+# No commands remaining.
+# You are currently rebasing branch 'main' on '44f18a2'.
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	modified:   README.md
+#	new file:   eslint.config.js
+#	new file:   index.html
+#	new file:   package-lock.json
+#	new file:   package.json
+#	new file:   public/vite.svg
+#	new file:   src/App.jsx
+#	new file:   src/assets/assets_admin/add_icon.svg
+#	new file:   src/assets/assets_admin/admin_logo.svg
+#	new file:   src/assets/assets_admin/appointment_icon.svg
+#	new file:   src/assets/assets_admin/appointments_icon.svg
+#	new file:   src/assets/assets_admin/assets.js
+#	new file:   src/assets/assets_admin/cancel_icon.svg
+#	new file:   src/assets/assets_admin/doctor_icon.svg
+#	new file:   src/assets/assets_admin/earning_icon.svg
+#	new file:   src/assets/assets_admin/home_icon.svg
+#	new file:   src/assets/assets_admin/list_icon.svg
+#	new file:   src/assets/assets_admin/patient_icon.svg
+#	new file:   src/assets/assets_admin/patients_icon.svg
+#	new file:   src/assets/assets_admin/people_icon.svg
+#	new file:   src/assets/assets_admin/tick_icon.svg
+#	new file:   src/assets/assets_admin/upload_area.svg
+#	new file:   src/assets/assets_frontend/Dermatologist.svg
+#	new file:   src/assets/assets_frontend/Gastroenterologist.svg
+#	new file:   src/assets/assets_frontend/General_physician.svg
+#	new file:   src/assets/assets_frontend/Gynecologist.svg
+#	new file:   src/assets/assets_frontend/Neurologist.svg
+#	new file:   src/assets/assets_frontend/Pediatricians.svg
+#	new file:   src/assets/assets_frontend/about_image.png
+#	new file:   src/assets/assets_frontend/appointment_img.png
+#	new file:   src/assets/assets_frontend/arrow_icon.svg
+#	new file:   src/assets/assets_frontend/assets.js
+#	new file:   src/assets/assets_frontend/chats_icon.svg
+#	new file:   src/assets/assets_frontend/contact_image.png
+#	new file:   src/assets/assets_frontend/cross_icon.png
+#	new file:   src/assets/assets_frontend/doc1.png
+#	new file:   src/assets/assets_frontend/doc10.png
+#	new file:   src/assets/assets_frontend/doc11.png
+#	new file:   src/assets/assets_frontend/doc12.png
+#	new file:   src/assets/assets_frontend/doc13.png
+#	new file:   src/assets/assets_frontend/doc14.png
+#	new file:   src/assets/assets_frontend/doc15.png
+#	new file:   src/assets/assets_frontend/doc2.png
+#	new file:   src/assets/assets_frontend/doc3.png
+#	new file:   src/assets/assets_frontend/doc4.png
+#	new file:   src/assets/assets_frontend/doc5.png
+#	new file:   src/assets/assets_frontend/doc6.png
+#	new file:   src/assets/assets_frontend/doc7.png
+#	new file:   src/assets/assets_frontend/doc8.png
+#	new file:   src/assets/assets_frontend/doc9.png
+#	new file:   src/assets/assets_frontend/dropdown_icon.svg
+#	new file:   src/assets/assets_frontend/group_profiles.png
+#	new file:   src/assets/assets_frontend/header_img.png
+#	new file:   src/assets/assets_frontend/info_icon.svg
+#	new file:   src/assets/assets_frontend/logo.svg
+#	new file:   src/assets/assets_frontend/menu_icon.svg
+#	new file:   src/assets/assets_frontend/profile_pic.png
+#	new file:   src/assets/assets_frontend/razorpay_logo.png
+#	new file:   src/assets/assets_frontend/stripe_logo.png
+#	new file:   src/assets/assets_frontend/upload_area.png
+#	new file:   src/assets/assets_frontend/upload_icon.png
+#	new file:   src/assets/assets_frontend/verified_icon.svg
+#	new file:   src/components/Header.jsx
+#	new file:   src/components/Navbar.jsx
+#	new file:   src/components/SpecialityMenu.jsx
+#	new file:   src/components/TopDoctors.jsx
+#	new file:   src/context/AppContext.jsx
+#	new file:   src/index.css
+#	new file:   src/main.jsx
+#	new file:   src/pages/About.jsx
+#	new file:   src/pages/Appointment.jsx
+#	new file:   src/pages/Contacts.jsx
+#	new file:   src/pages/Doctors.jsx
+#	new file:   src/pages/Home.jsx
+#	new file:   src/pages/Login.jsx
+#	new file:   src/pages/MyAppointments.jsx
+#	new file:   src/pages/MyProfile.jsx
+#	new file:   vite.config.js
+#
+
