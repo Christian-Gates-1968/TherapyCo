@@ -56,6 +56,10 @@ const Navbar = () => {
           <li className="py-1">CONTACT</li>
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
+        <a className="border px-2.5 py-0.5 rounded-full border-fuchsia-500 text-gray-600" href={import.meta.env.VITE_ADMIN_URL} target="_blank" rel="noopener noreferrer">
+            <li className="py-1">ADMIN/DOCTOR PORTAL</li>
+            <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
+        </a>
       </ul>
       <div className="flex items-center gap-4">
         {token && userData ? (
@@ -128,6 +132,14 @@ const Navbar = () => {
             <NavLink onClick={() => setShowMenu(false)} to="/contact">
               <p className="px-4 py-2 rounded inline-block">CONTACT</p>
             </NavLink>
+            <a 
+              href={import.meta.env.VITE_ADMIN_URL} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              onClick={() => setShowMenu(false)}
+            >
+              <p className="px-4 py-2 rounded inline-block">ADMIN/DOCTOR PORTAL</p>
+            </a>
           </ul>
         </div>
       </div>
