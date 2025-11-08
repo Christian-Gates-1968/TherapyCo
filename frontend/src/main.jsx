@@ -5,6 +5,8 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import AppContextProvider from './context/AppContext.jsx'
 import ThemeContextProvider from './context/ThemeContext.jsx'
+import { ChatbotContextProvider } from './context/ChatbotContext.jsx'
+
 
 
 
@@ -12,7 +14,9 @@ createRoot(document.getElementById('root')).render(
   <BrowserRouter>  
     <AppContextProvider>
       <ThemeContextProvider>
-        <App />
+        <ChatbotContextProvider>
+          <App />
+        </ChatbotContextProvider>
       </ThemeContextProvider>
     </AppContextProvider>
   </BrowserRouter>

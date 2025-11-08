@@ -15,12 +15,17 @@ import ScrollToTop from './components/ScrollToTop'
 import { ToastContainer, toast } from 'react-toastify';
 import { useContext, useEffect } from 'react';
 import { ThemeContext } from './context/ThemeContext'
+import { ChatbotContext } from './context/ChatbotContext';
+import FloatingChatbot from './components/FloatingChatbot';
+import ChatWindow from './components/ChatWindow';
 
 
 
 const App = () => {
 
  const {theme} = useContext(ThemeContext);
+   const { isChatOpen } = useContext(ChatbotContext);
+
 
   useEffect(() => {
     document.body.className = theme;
@@ -46,6 +51,8 @@ const App = () => {
       </Routes>
 
       <Footer/>
+      <FloatingChatbot />
+      {isChatOpen && <ChatWindow />}
     </div>
   )
 }
