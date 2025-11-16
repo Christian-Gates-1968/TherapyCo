@@ -203,8 +203,9 @@ const Appointment = () => {
     Show booking UI only if doctor is available 
     */}
 
+
     {/* Check the doctor's is_available field first */}
-    {docInfo.is_available ? (
+    {docInfo.available ? (
       
       /* If true, show the entire booking UI */
       <div className='sm:ml-72 sm:pl-4 mt-4 font-medium text-gray-500'>

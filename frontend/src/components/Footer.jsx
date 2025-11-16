@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="md:mx-10">
       <div className="mt-5">
-        <hr class="border-t-2 border-primary" />
+        <hr className="border-t-2 border-primary" />
       </div>
 
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 text-gray-600 my-10 text-sm">
@@ -52,7 +52,7 @@ const Footer = () => {
         {/* ---------- Copyright Text ---------- */}
       </div>
       <div>
-        <hr class="border-t-2 border-primary" />
+        <hr className="border-t-2 border-primary" />
         <p className="py-5 text-fuchsia-700 text-sm text-center">
           © 2025. All rights reserved.
         </p>
