@@ -40,11 +40,11 @@ chatbotRouter.post("/chatbot", async (req, res) => {
     const response = await chat.sendMessage({ message });
     const updatedHistory = await chat.getHistory();
 
-    // (Optional defense) Validate the response contains an allowed specialty, else set a fallback
+    // (Optional defense) Validate the response contains an allowed specialty, else set a fallback (currently sends original)
     const found = THERAPIST_SPECIALTIES.find((s) => response.text.includes(s));
     const reply = found
       ? response.text
-      : ""
+      : response.text
 
     res.json({ reply, updatedHistory });
   } catch (error) {
