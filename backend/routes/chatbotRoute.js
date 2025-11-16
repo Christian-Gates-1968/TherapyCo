@@ -44,7 +44,7 @@ chatbotRouter.post("/chatbot", async (req, res) => {
     const found = THERAPIST_SPECIALTIES.find((s) => response.text.includes(s));
     const reply = found
       ? response.text
-      : `We recommend you see a Clinical Psychologist for your needs.`;
+      : ""
 
     res.json({ reply, updatedHistory });
   } catch (error) {
