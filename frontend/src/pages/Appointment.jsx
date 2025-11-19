@@ -199,7 +199,7 @@ const Appointment = () => {
           </div>
       </div>
       
-    {/* ---- MODIFICATION START ----
+    {/*
     Show booking UI only if doctor is available 
     */}
 
@@ -272,7 +272,6 @@ const Appointment = () => {
       </div>
     )}
 
-    {/* ---- MODIFICATION END ---- */}
 
 
     {/* Listing related doctors */}

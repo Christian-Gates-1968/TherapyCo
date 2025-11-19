@@ -13,7 +13,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   const logout = () => {
-    /*to toggle logged in or not*/
+    /* to toggle logged in or not */
     setToken(false);
     localStorage.removeItem("token");
     setShowDropdown(false);
