@@ -244,7 +244,7 @@ Open **three terminals**—one for each service.
 ```sh
 cd backend
 npm install
-npm run dev
+npm run server
 ```
 
 ### **Frontend (User)**
