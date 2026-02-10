@@ -1,22 +1,78 @@
-# **Therapy Co — Full-Stack Clinic & Appointment Booking Platform**
+# **Therapy Co — AI-Powered Therapy & Appointment Platform** 🧠💙
 
-A production-ready **React + Next-Gen Vite Frontend + Node/Express Backend** application for booking appointments with therapists and doctors.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.3-blue?logo=react" alt="React"/>
+  <img src="https://img.shields.io/badge/Node.js-Express-green?logo=node.js" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb" alt="MongoDB"/>
+  <img src="https://img.shields.io/badge/WebRTC-Video-orange?logo=webrtc" alt="WebRTC"/>
+  <img src="https://img.shields.io/badge/AI-Gemini-purple?logo=google" alt="Gemini AI"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"/>
+</p>
 
-Includes:
+A **production-ready, full-stack healthcare platform** for booking therapy appointments with real-time video consultations, AI assistance, and comprehensive patient management.
 
-* User-facing booking site
-* Admin/Doctor management portal
-* Secure Node/Express backend
-* Token-based auth, role separation
-* Cloudinary uploads, Razorpay payments
-* AI chatbot (Gemini)
-* **Prescription management system**
-* **Online pharmacy/medicines store with cart**
-* **Email reminder service for appointments (12 hours before)**
-* **Real-time video consultations (WebRTC)**
-* Fully dockerized services
+## **🚀 Key Features**
 
-Built with clean architecture, reusable React Contexts, REST APIs, and modern tooling (Vite + Tailwind).
+✅ **AI Chatbot** - Gemini-powered assistant for patient queries  
+✅ **Video Consultations** - WebRTC-based real-time therapy sessions  
+✅ **Smart Scheduling** - Instant or scheduled appointments  
+✅ **Digital Prescriptions** - Secure prescription management  
+✅ **Online Pharmacy** - Medicines store with shopping cart  
+✅ **Email Reminders** - Automated notifications 12 hours before appointments  
+✅ **Payment Integration** - Razorpay payment gateway  
+✅ **Admin Dashboard** - Comprehensive management panel  
+✅ **Mobile Responsive** - Works seamlessly on all devices  
+✅ **Docker Ready** - Complete containerization support  
+
+---
+
+## **📋 Table of Contents**
+
+- [Screenshots & Features](#-screenshots--features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure-overview)
+- [Getting Started](#-quick-start)
+- [Environment Variables](#-environment-variables)
+- [Features Documentation](#feature-details)
+  - [AI Chatbot](#-ai-chatbot-gemini)
+  - [Video Consultations](#-video-consultations)
+  - [Email Reminders](#-email-reminder-service)
+  - [Prescription System](#-prescription-system)
+  - [Pharmacy Store](#pharmacy-store)
+- [Production Deployment](#-production-deployment)
+- [Docker Support](#-docker-support)
+- [License](#-license)
+
+---
+
+## **🛠 Tech Stack**
+
+### **Frontend**
+- React 18.3 with Vite
+- React Router DOM
+- Context API for state management
+- Tailwind CSS
+- Axios
+- Socket.io Client
+- Simple-peer (WebRTC)
+- React Toastify
+
+### **Backend**
+- Node.js + Express
+- MongoDB + Mongoose
+- Socket.io (WebRTC signaling)
+- JWT Authentication
+- Nodemailer (Email service)
+- Node-cron (Scheduled jobs)
+- Cloudinary (Image uploads)
+- Razorpay (Payments)
+- Google Gemini API (AI chatbot)
+- Bcrypt (Password hashing)
+
+### **DevOps**
+- Docker & Docker Compose
+- Git version control
+- Environment-based configuration
 
 ---
 
@@ -55,7 +111,84 @@ Built with clean architecture, reusable React Contexts, REST APIs, and modern to
 
 ---
 
-## **🗂 Project Structure Overview**
+## **� Screenshots & Features**
+
+### **🏠 Homepage & Landing**
+![Homepage](screenshots/homepage.png)
+*Modern responsive landing page with hero section, speciality menu, and top doctors*
+
+### **🤖 AI Chatbot Assistant**
+<p align="center">
+  <img src="screenshots/chatbot-conversation.png" alt="AI Chatbot" width="700"/>
+</p>
+
+*Gemini-powered AI chatbot assists patients with queries and facilitates instant consultation requests*
+
+### **📹 Real-Time Video Consultations**
+
+**Incoming Consultation Request (Doctor Side)**
+![Incoming Request](screenshots/incoming-request-doctor.png)
+*Doctors can accept, decline, or schedule consultations for later*
+
+**Active Video Call**
+![Video Call](screenshots/video-call-active.png)
+*WebRTC-based secure video consultations with screen controls*
+
+### **🗓️ Appointment Management**
+
+**Patient Appointments Dashboard**
+![Patient Appointments](screenshots/patient-appointments-with-join-button.png)
+*Patients can view appointments, join video calls, and see scheduled consultations*
+
+**Scheduled Consultations**
+![Scheduled Consultations](screenshots/scheduled-consultations.png)
+*Clear visibility of upcoming scheduled appointments with date/time and quick actions*
+
+### **📋 Digital Prescriptions**
+
+**Doctor Writing Prescription**
+![Doctor Prescription Modal](screenshots/prescription-modal-doctor.png)
+
+**Patient Viewing Prescription**
+![Prescription View](screenshots/prescription-view-patient.png)
+*Secure digital prescription system - doctors can issue, patients can view*
+
+### **💊 Online Pharmacy Store**
+
+**Medicines Listing**
+![Pharmacy Store](screenshots/pharmacy-store.png)
+*Browse psychological medicines with search and category filters*
+
+**Medicine Details & Cart**
+<p align="center">
+  <img src="screenshots/medicine-detail.png" alt="Medicine Detail" width="45%"/>
+  <img src="screenshots/shopping-cart.png" alt="Shopping Cart" width="45%"/>
+</p>
+
+### **👨‍⚕️ Admin & Doctor Panel**
+
+**Admin Dashboard**
+![Admin Dashboard](screenshots/admin-dashboard.png)
+*Statistics overview, revenue tracking, and appointment management*
+
+**Doctor Appointments View**
+![Doctor Appointments](screenshots/doctor-appointments.png)
+*Manage appointments, join video calls, and issue prescriptions*
+
+### **📧 Automated Email Reminders**
+![Email Reminder](screenshots/email-reminder.png)
+*Styled HTML emails sent 12 hours before appointments*
+
+### **📱 Mobile Responsive**
+<p align="center">
+  <img src="screenshots/mobile-home.png" alt="Mobile Home" width="250"/>
+  <img src="screenshots/mobile-chat.png" alt="Mobile Chat" width="250"/>
+  <img src="screenshots/mobile-appointments.png" alt="Mobile Appointments" width="250"/>
+</p>
+
+---
+
+## **�🗂 Project Structure Overview**
 
 ```
 therapy-co/
@@ -390,10 +523,81 @@ docker-compose up -d
 
 ---
 
-## **📄 License**
+## **🤝 Contributing**
 
-MIT License — feel free to use and modify for your projects.
+Contributions are welcome! Here's how you can help:
 
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
 
+### Areas for Contribution:
+- 🐛 Bug fixes
+- ✨ New features
+- 📝 Documentation improvements
+- 🎨 UI/UX enhancements
+- 🧪 Test coverage
+- 🌐 Internationalization (i18n)
 
+---
 
+## **📝 License**
+
+This project is licensed under the **MIT License**.
+
+```
+MIT License
+
+Copyright (c) 2026 Therapy Co
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## **🙏 Acknowledgments**
+
+- **Google Gemini API** - AI chatbot capabilities
+- **Simple-peer** - WebRTC implementation
+- **Tailwind CSS** - Beautiful UI components
+- **MongoDB** - Robust database solution
+- **Cloudinary** - Image management
+- **Razorpay** - Payment processing
+
+---
+
+## **📞 Support**
+
+If you found this project helpful, please consider:
+- ⭐ **Starring** the repository
+- 🐛 **Reporting bugs** via Issues
+- 💡 **Suggesting features** via Issues
+- 🔀 **Contributing** via Pull Requests
+
+---
+
+<p align="center">
+  Made with ❤️ for accessible mental healthcare
+</p>
+
+<p align="center">
+  <strong>Therapy Co</strong> - Connecting patients with care, one click at a time 🧠💙
+</p>
