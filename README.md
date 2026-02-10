@@ -119,7 +119,7 @@ A **production-ready, full-stack healthcare platform** for booking therapy appoi
 
 ### **🤖 AI Chatbot Assistant**
 <p align="center">
-  <img src="screenshots/chatbot-conversation.png" alt="AI Chatbot" width="700"/>
+  <img src="screenshots/chatbot-conversation.png" alt="AI Chatbot" width="500"/>
 </p>
 
 *Gemini-powered AI chatbot assists patients with queries and facilitates instant consultation requests*
