@@ -147,23 +147,30 @@ A **production-ready, full-stack healthcare platform** for booking therapy appoi
 ### **📋 Digital Prescriptions**
 
 **Doctor Writing Prescription**
+
 ![Doctor Prescription Modal](screenshots/prescription-modal-doctor.png)
 
 **Patient Viewing Prescription**
+
 ![Prescription View](screenshots/prescription-view-patient.png)
+
 *Secure digital prescription system - doctors can issue, patients can view*
 
 ### **💊 Online Pharmacy Store**
 
 **Medicines Listing**
+
 ![Pharmacy Store](screenshots/pharmacy-store.png)
+
 *Browse psychological medicines with search and category filters*
 
-**Medicine Details & Cart**
-<p align="center">
-  <img src="screenshots/medicine-detail.png" alt="Medicine Detail" width="45%"/>
-  <img src="screenshots/shopping-cart.png" alt="Shopping Cart" width="45%"/>
-</p>
+**Medicine Details**
+
+![Medicine Detail](screenshots/medicine-detail.png)
+
+**Shopping Cart**
+
+![Shopping Cart](screenshots/shopping-cart.png)
 
 ### **👨‍⚕️ Admin & Doctor Panel**
 
