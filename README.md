@@ -211,6 +211,24 @@ VITE_CURRENCY=$
 
 ---
 
+## **☁️ Deployment**
+
+**⚠️ This app won't work on Vercel** (requires persistent server for WebSockets & cron jobs)
+
+**✅ Recommended platforms:**
+- **[Railway.app](https://railway.app)** - Auto-detects Docker, easiest
+- **[Render.com](https://render.com)** - Free tier available
+- **DigitalOcean/AWS** - VPS with Docker ($6/mo)
+
+📖 **[Complete Deployment Guide →](DEPLOYMENT-GUIDE.md)**
+
+**Quick Docker deployment on VPS:**
+```bash
+sudo bash deploy.sh
+```
+
+---
+
 ## **🚀 Local Development Setup**
 
 Open **three terminals**—one for each service.
