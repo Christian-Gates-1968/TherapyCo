@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"/>
 
 </p> 
-A **production-ready, full-stack healthcare platform** for booking therapy appointments with real-time video consultations, AI assistance, and comprehensive patient management.
+A production-ready, full-stack healthcare platform for booking therapy appointments with real-time video consultations, AI assistance, and comprehensive patient management.
 
 ## **🚀 Key Features**
 
