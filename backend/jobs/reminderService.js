@@ -16,6 +16,13 @@ const parseAppointmentDateTime = (slotDate, slotTime) => {
 };
 
 const sendDailyReminders = async () => {
+    // Disabled by default to prevent unwanted outgoing emails.
+    // To enable reminders set environment variable REMINDERS_ENABLED=true
+    if (process.env.REMINDERS_ENABLED !== 'true') {
+        console.log('[Reminder Service] Disabled via REMINDERS_ENABLED flag. No emails will be sent.');
+        return;
+    }
+
     try {
         const now = new Date();
         const twelveHoursLater = new Date(now.getTime() + 12 * 60 * 60 * 1000);
@@ -96,11 +103,16 @@ const sendDailyReminders = async () => {
 // Cron format: Minute Hour Day Month DayOfWeek
 // 0 * * * * means every hour at minute 0
 const startReminderService = () => {
-    cron.schedule('0 * * * *', () => {
-        console.log('[Reminder Service] Running hourly appointment check...');
-        sendDailyReminders();
-    });
-    console.log('[Reminder Service] Hourly reminder job scheduled (checks for appointments 12 hours ahead).');
+    // Only schedule if explicitly enabled to avoid unexpected emails.
+    if (process.env.REMINDERS_ENABLED === 'true') {
+        cron.schedule('0 * * * *', () => {
+            console.log('[Reminder Service] Running hourly appointment check...');
+            sendDailyReminders();
+        });
+        console.log('[Reminder Service] Hourly reminder job scheduled (checks for appointments 12 hours ahead).');
+    } else {
+        console.log('[Reminder Service] Not scheduled because REMINDERS_ENABLED is not set to "true".');
+    }
 };
 
 export { startReminderService, sendDailyReminders };
