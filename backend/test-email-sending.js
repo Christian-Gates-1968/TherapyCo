@@ -85,8 +85,13 @@ const testSpecificEmail = async () => {
         }
 
         // 4. Trigger Email Logic
-        console.log("Triggering reminder service...");
-        await sendDailyReminders();
+        // Respect REMINDERS_ENABLED guard to prevent accidental emails
+        if (process.env.REMINDERS_ENABLED !== 'true') {
+            console.log('[Test Script] REMINDERS_ENABLED is not true - skipping reminder send.');
+        } else {
+            console.log("Triggering reminder service...");
+            await sendDailyReminders();
+        }
 
         console.log("Done. Check your inbox.");
 

@@ -8,8 +8,13 @@ const runManualCheck = async () => {
         await connectDB();
         console.log("Connected directly to DB for manual check.");
 
-        console.log("Triggering daily reminder sending logic...");
-        await sendDailyReminders();
+        // Respect REMINDERS_ENABLED guard to prevent accidental emails
+        if (process.env.REMINDERS_ENABLED !== 'true') {
+            console.log('[Manual Trigger] REMINDERS_ENABLED is not true - skipping reminder send.');
+        } else {
+            console.log("Triggering daily reminder sending logic...");
+            await sendDailyReminders();
+        }
 
         console.log("Manual check completed.");
 
